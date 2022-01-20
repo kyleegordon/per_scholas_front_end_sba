@@ -106,7 +106,8 @@
 /*** Media Query Styles ***/
 @media screen and (max-width: 960px) {
     .navbar__container {
-        /* display: flex;
+        /* Probably Remove This
+        display: flex;
         justify-content: space-between;
         height: 80px;
         z-index: 1;
@@ -187,7 +188,7 @@
         cursor: pointer;
     }
 
-    /* the following 3 syles animate menu button */
+    /* The following 3 syles animate the 3 bars that make up the mobile menu icon */
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -201,4 +202,4 @@
     }
 }
 /* https://www.youtube.com/watch?v=FazgJVnrVuI
-paused video at 30:16 */
+paused video at 33:11 */
