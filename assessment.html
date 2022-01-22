@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- adds font Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- links to font awesome for icons -->
+    <script src="https://kit.fontawesome.com/91d2a50ff4.js" crossorigin="anonymous"></script>
+
+    <style>
+        table {
+            color: #fff;
+            background-color: #3838509d;
+            border-radius: 4px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        td {
+            height: 40px;
+            padding-left: 10px;
+            
+        }
+
+        caption {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .slider {
+            width: 90%;
+        }
+
+
+        .services {
+            height: 400px;
+        }
+
+        @media screen and (max-width: 960px) {
+
+            .services {
+                height: 500px;
+                /* padding-bottom: 50px; */
+            }
+        }
+
+        @media screen and (max-width: 481px) {
+
+            .services {
+                height: 600px;
+               
+            }
+
+            .main_container {
+                padding-bottom: 50px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><i class="fas fa-dice-d20"></i>LOGO</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <!-- These are the 3 bars for the mobile menu icon -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="assessment.html" class="navbar__links">Assessment</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="signup.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main__container" style="grid-template-columns: 1fr; justify-content: center;">
+            <div class="main__content" style="margin: 0 auto;">
+                <table>
+                    <caption>
+                        <h3 style="color:#fff; margin-bottom: 20px; font-size: 2rem;">Security Assessment</h3>
+                        Please use the sliding scale to assess your current security practices:<br>
+                        0 = We don't do this <br>
+                        5 = The process is automated
+                    </caption>
+                    <form>
+                        <tr>
+                            <td>
+                                <label for="question1">Maintain up to date hardware inventory</label>
+                            </td>
+                            <td>
+                                <label for="question10">Antivirus software is installed on all devices</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question1" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question10" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question2">Maintain up to date software inventory</label>
+                            </td>
+                            <td>
+                                <label for="question11">Critical business data is backed up</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question2" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question11" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question3">All company devices are encrypted</label>
+                            </td>
+                            <td>
+                                <label for="question12">Guests WIFI is separate from company WIFI</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question3" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question12" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question4">All company devices are managed by the organization</label>
+                            </td>
+                            <td>
+                                <label for="question13">Networking equipment is kept up to date</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question4" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question13" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question5">Every employee has a unique account</label>
+                            </td>
+                            <td>
+                                <label for="question14">New employees receive security awareness training</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question5" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question14" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question6">Only authorized users are able to access company systems</label>
+                            </td>
+                            <td>
+                                <label for="question15">Contact list for service providers is kept up to date</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question6" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question15" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question7">Software is kept up to date</label>
+                            </td>
+                            <td>
+                                <label for="question16">Appropriate licenses have been purchased for software use</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question7" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question16" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question8">Centralized management systems log critical events</label>
+                            </td>
+                            <td>
+                                <label for="question17">Cyber security incident response has been planned in advance</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question8" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question17" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="question9">Multi-factor authentication is enabled to access email</label>
+                            </td>
+                            <td>
+                                <label for="question18">Organization security measures are routinely tested</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="range" class="slider" id="question9" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                            <td>
+                                <input type="range" class="slider" id="question18" name="points" min="0" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                <output>3</output>
+                            </td>
+                        </tr>
+                        
+                
+                        <tr style="text-align: center;">
+                            <td colspan="2">
+                                <input type="submit" value="Submit" style="text-align: center; padding: 5px;">
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+            <!-- <div class="main__img--container">
+                <img src="images/undraw_hacker_mind_-6-y85.svg" alt="cyber professional image" id="main__img">
+            </div> -->
+        </div>
+    </div>
+
+    <div class="services"></div>
+
+    <div class="footer__container">
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fas fa-dice-d20"></i>LOGO</a>
+                </div>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <p class="website__rights">© LOGO 2022. All rights reserved </p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
