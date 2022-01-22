@@ -30,8 +30,8 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb119 100%);
+    background-color: #eb0d0d;
+    background-image: linear-gradient(to top, #5a0303 0%, #eb0d0d 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -88,17 +88,17 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background-color: #f77062;
+    background-color: #f31f1f;
     color: #fff;
 }
 
 .button:hover {
-    background: #4837ff;
+    background: #0d7ceb;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #f77062;
+    color: #f31f1f;
     transition: all 0.3s ease;
 }
 
@@ -224,8 +224,8 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #eb0d0d;
+    background-image: linear-gradient(to top, #5a0303 0%, #eb0d0d 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -235,8 +235,8 @@
 
 .main__content h2 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-color: #eb0d0d;
+    background-image: linear-gradient(to top, #383850 0%, #ebf1ee 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -253,7 +253,7 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #eb0d0d 0%, #a30909 100%);
     padding: 14px, 32px;
     border: none;
     border-radius: 4px;
@@ -261,8 +261,9 @@
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transistion: all 0.35s;
+    transition: all 0.35s;
     outline: none;
+    padding: 5px;
 }
 
 .main__btn a{
@@ -279,7 +280,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #0d7ceb;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -367,15 +368,14 @@ main__img--container {
 }
 
 .services h1 {
-    background-color: #ff8177;
+    background-color: #eb0d0d;
     background-image: linear-gradient(
         to right, 
-        #ff8177 0%, 
-        #ff867a 0%, 
-        #ff8c7f 21%, 
-        #f99185 52%, 
-        #cf556c 78%, 
-        #b12a5b 100%
+        #f54f4f 0%, 
+        #f43737 21%, 
+        #f31f1f 52%, 
+        #eb0d0d 78%, 
+        #a30909 100%
     );
     background-size: 100%;
     margin-bottom: 5rem;
@@ -397,14 +397,14 @@ main__img--container {
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17,17,17,0.6) 100%)/*, url("addpichere.jpg")*/;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17,17,17,0.6) 100%), url("images/pexels-saksham-choudhary-2036656.jpg");
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
 .services__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17,17,17,0.6) 100%)/*, url("addpichere.jpg")*/;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17,17,17,0.6) 100%), url("images/pexels-tima-miroshnichenko-5380590.jpg");
 }
 
 .services h2 {
@@ -425,7 +425,7 @@ main__img--container {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #f31f1f;
     position: absolute;
     top: 440px;
     left: 30px;
