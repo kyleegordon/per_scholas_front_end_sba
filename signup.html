@@ -81,7 +81,7 @@
             <div class="main__content">
                 <h3 style="color:#fff; margin-bottom: 20px; font-size: 2rem;">Create an Account</h3>
                 <table>
-                    <form>
+                    <form name="signupForm">
                         <tr>
                             <td>
                                 <label for="company_name">Company Name</label>
@@ -103,7 +103,7 @@
                                 <label for="password">Password</label>
                             </td>
                             <td>
-                                <input type="password" id="pasword" required/>
+                                <input type="password" id="password" required/>
                             </td>
                         </tr>
                         <tr>
@@ -143,10 +143,10 @@
                                 <label for="security_professionals">Do you employ security professionals</label>
                             </td>
                             <td>
-                                <input type="radio" id="security_professionals" name="security_professionals" value="yes">
+                                <input type="radio" id="yes" name="security_professionals" value="yes">
                                 <label for="yes">Yes</label>
-                                <input type="radio" id="security_professionals" name="security_professionals" value="no">
-                                <label for="yes">No</label>
+                                <input type="radio" id="no" name="security_professionals" value="no">
+                                <label for="no">No</label>
                             </td>
                         </tr>
                         <tr>
@@ -154,22 +154,22 @@
                                 <label for="data_types">Data Types Managed</label>
                             </td>
                             <td>
-                                <input type="checkbox" id="data1" name="data1" value="Personal">
+                                <input type="checkbox" id="data1" name="data_types" value="Personal">
                                 <label for="data1">Personal</label>
                                 <br>
-                                <input type="checkbox" id="data2" name="data1" value="Healthcare">
+                                <input type="checkbox" id="data2" name="data_types" value="Healthcare">
                                 <label for="data2">Healthcare</label>
                                 <br>
-                                <input type="checkbox" id="data3" name="data1" value="Credit">
+                                <input type="checkbox" id="data3" name="data_types" value="Credit">
                                 <label for="data3">Credit Card</label>
                                 <br>
-                                <input type="checkbox" id="data4" name="data1" value="Other">
+                                <input type="checkbox" id="data4" name="data_types" value="Other">
                                 <label for="data4">Other</label>
                             </td>
                         </tr>
                         <tr style="text-align: center;">
                             <td colspan="2">
-                                <input type="submit" value="Create Account" style="text-align: center; padding: 5px; margin-top: 10px;">
+                                <input type="button" value="Create Account" onclick="collectData()" style="text-align: center; padding: 5px; margin-top: 10px;">
                             </td>
                         </tr>
                     </form>
@@ -201,5 +201,6 @@
         </div>
     </div>
     <script src="scripts/app.js"></script>
+    <script src="scripts/signup_form.js"></script>
 </body>
 </html>
