@@ -75,14 +75,17 @@ function collectData() {
         var industry = document.getElementById('industry').value;
     }
 
+    //assigns yes or no to securityProfessionals based on radio input
     var securityProfessionals = document.querySelector('input[name="security_professionals"]:checked').value;
     
+    //creates an array of selected data_types checkboxes
     var checkboxes = document.querySelectorAll('input[name="data_types"]:checked');
     var values = [];
     checkboxes.forEach((checkbox) => {
         values.push(checkbox.value);
      });
 
+     //creates an object to hold the account data
      const accountData = { 
          companyName: companyName,
          email: email,
@@ -94,8 +97,6 @@ function collectData() {
         securityProfessionals: securityProfessionals,
         dataTypes: values
      };
-
-     console.log(accountData);
 
     alert("Your account has been created:\n" + JSON.stringify(accountData, null, 4));
     return true;
