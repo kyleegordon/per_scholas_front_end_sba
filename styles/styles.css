@@ -84,6 +84,7 @@
     border-radius: 4px;
     background-color: #f31f1f;
     color: #fff;
+    text-decoration: none;
 }
 
 .button:hover {
