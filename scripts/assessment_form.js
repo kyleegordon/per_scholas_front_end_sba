@@ -1,5 +1,6 @@
 function getAssessmentData() {
 
+    //collects data from assessment form and saves in an object
     var formData = new FormData(document.querySelector("[name='assessmentForm']"));
     var qNum = 1;
     const assessmentData = {};

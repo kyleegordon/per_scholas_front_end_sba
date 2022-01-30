@@ -93,9 +93,9 @@ function collectData() {
          phone: phone,
          website: website,
          numEmployees: numEmployees,
-        industry: industry,
-        securityProfessionals: securityProfessionals,
-        dataTypes: values
+         industry: industry,
+         securityProfessionals: securityProfessionals,
+         dataTypes: values
      };
 
     alert("Your account has been created:\n" + JSON.stringify(accountData, null, 4));
